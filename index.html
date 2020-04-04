@@ -11,7 +11,7 @@
 <body>
     
     <!-- Grid -->
-    <div class=container>
+    <div class="container">
 
         <!-- Row One -->
         <div class="row">
@@ -33,32 +33,48 @@
 
             <!-- Input Buttons for Search Parameters -->
 
-            <div class="input-group">
-
+            <div class="input-group" style="display: grid; grid-template-columns: repeat(1); margin: 100px 0px; justify-content: center;">
+ 
                 <!-- Search Term Input Field -->
                 <label for="search-term"> Search Term </label>
-                <input id="search-term" type="text" class="form-control" placeholder="Search Term" aria-label="" aria-describedby="basic-addon1"/>
+                <input id="search-term" type="text" class="form-control" placeholder="(ex. COVID-19)" aria-describedby="basic-addon1" style="width: 200px;"/>
 
                 <!-- Records Quantity Input Field -->
-                <label for="records-quantity"> Quantity of Records </label>
-                <input id="records-quantity" type="text" class="form-control" placeholder="Number of Records You Would Like to See" aria-label="" aria-describedby="basic-addon1"/>
+                <label for="article-count"> Quantity of Records </label>
+                <!-- <input id="records-quantity" type="text" class="form-control" placeholder="Number of Records" aria-describedby="basic-addon1" style="width: 200px;"/> -->
+
+                <div class="form-group">
+                  <!-- <button class="btn btn-secondary dropdown-toggle"
+                          type="button" id="dropdownMenu4" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                    Number of Records
+                  </button> -->
+                  <select id="article-count" class="custom-select">
+                    <option selected value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
 
                 <!-- Start Year Input Field -->
                 <label for="start-year"> Start Year </label>
-                <input id="start-year" type="text" class="form-control" placeholder="Start Year (Optional)" aria-label="" aria-describedby="basic-addon1"/>
+                <input id="start-year" type="text" class="form-control" placeholder="Start Year (Optional)" aria-describedby="basic-addon1" style="width: 200px;"/>
 
                 <!-- End Year Input Field -->
                 <label for="end-year"> End Year </label>
-                <input id="end-year" type="text" class="form-control" placeholder="End Year (Optional)" aria-label="" aria-describedby="basic-addon1"/>
-                <!-- <div class="input-group-append">
+                <input id="end-year" type="text" class="form-control" placeholder="End Year (Optional)" aria-describedby="basic-addon1" style="width: 200px;"/>
+                
+                <div style="margin: 20px 0px;" class="input-group-append">
 
-                  <button class="btn btn-success" type="button">L</button>
+                  <!-- Submit Button -->
+                  <button id="add-search-terms" class="btn btn-success btn-lg" type="submit" style="border-radius: 5px;"> Search NYT Articles </button>
 
-                </div> -->
-                <!-- Submit Button -->
-                <input id="add-search-terms" type="submit"/>
+                </div>
+
+                
+                <!-- <input id="add-search-terms" type="submit"/>
             
-                <button class="btn btn-primary btn-lg" href="">Search NYT Articles</button>
+                <button class="btn btn-primary btn-lg" href="">Search NYT Articles</button> -->
 
             </div>
 
@@ -66,7 +82,41 @@
 
         <div class="row">
 
-            <table class="table">
+          <div class="col-md-12">
+
+            <br>
+
+            <div class="card">
+
+              <div class="card-header">
+                <span> Top Articles </span>
+              </div>
+
+              <div id="article-section" class="card-body">
+
+              </div>
+
+            </div>
+
+          </div>   
+
+        </div>
+
+    </div>
+    
+    <!-- Our CSS -->
+    <script src="script.js" type="text/javascript"></script>
+
+    <!-- Bootstrap Script  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+<!-- <table class="table">
 
                 <thead>
                   <tr>
@@ -87,19 +137,4 @@
                   </tr>
                 </tbody>
 
-              </table>
-
-        </div>
-
-    </div>
-    
-    <!-- Our CSS -->
-    <script src="script.js" type="text/javascript"></script>
-    <!-- Bootstrap Script  -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-</body>
-</html>
+              </table> -->
