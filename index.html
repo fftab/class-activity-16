@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Grid -->
+    <div class=container>
+
+        <!-- Row One -->
+        <div class="row">
+
+            <!-- Jumbotron -->
+            <div class="jumbotron">
+
+                <h1 class="display-3">New York Times Article Search</h1>
+
+                <h3 class="lead">Search the New York Times for articles using the parameters below.</h3>
+
+                <hr class="my-2">
+
+              </div>
+
+        </div>
+
+        <div class="row">
+
+            <!-- Input Buttons for Search Parameters -->
+
+            <div class="input-group">
+
+                <!-- Search Term Input Field -->
+                <label for="search-term"> Search Term </label>
+                <input id="search-term" type="text" class="form-control" placeholder="Search Term" aria-label="" aria-describedby="basic-addon1"/>
+
+                <!-- Records Quantity Input Field -->
+                <label for="records-quantity"> Quantity of Records </label>
+                <input id="records-quantity" type="text" class="form-control" placeholder="Number of Records You Would Like to See" aria-label="" aria-describedby="basic-addon1"/>
+
+                <!-- Start Year Input Field -->
+                <label for="start-year"> Start Year </label>
+                <input id="start-year" type="text" class="form-control" placeholder="Start Year (Optional)" aria-label="" aria-describedby="basic-addon1"/>
+
+                <!-- End Year Input Field -->
+                <label for="end-year"> End Year </label>
+                <input id="end-year" type="text" class="form-control" placeholder="End Year (Optional)" aria-label="" aria-describedby="basic-addon1"/>
+                <!-- <div class="input-group-append">
+
+                  <button class="btn btn-success" type="button">L</button>
+
+                </div> -->
+                <!-- Submit Button -->
+                <input id="add-search-terms" type="submit"/>
+            
+                <button class="btn btn-primary btn-lg" href="">Search NYT Articles</button>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <table class="table">
+
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Last Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-dark">
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+        </div>
+
+    </div>
+    
+    <!-- Our CSS -->
+    <script src="script.js" type="text/javascript"></script>
+    <!-- Bootstrap Script  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
